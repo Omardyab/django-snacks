@@ -52,9 +52,12 @@ MIDDLEWARE = [
 ROOT_URLCONF = 'django_snacks.urls'
 
 TEMPLATES = [
-    {
+    {   
         'BACKEND': 'django.template.backends.django.DjangoTemplates',
-        'DIRS': [],
+        # change the following
+        'DIRS': [
+            BASE_DIR /'templates'
+        ],
         'APP_DIRS': True,
         'OPTIONS': {
             'context_processors': [
